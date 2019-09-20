@@ -1,15 +1,14 @@
 import React from "react";
 
 
-function header ({title }) {
+function Header (props) {
     return (
         <div>
-            {title}
-            <nav class="navbar navbar-light bg-dark">
-                Score: 0 | Best Score: 0
+            <nav className="navbar navbar-light bg-dark">
+                Score: {props.userScore} | High Score: {props.highScore}
             </nav>
         </div>
     )
 }
 
-export default header;
+export default Header;
