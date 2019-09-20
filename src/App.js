@@ -6,17 +6,18 @@ import Header from "./components/Header";
 
 class App extends React.Component {
   state = {
-    userScore: 5,
-    highScore: 6
+    userScore: 2,
+    highScore: 3
   };
+
 
 
   render() {
     return (
       <div>
         <Header userScore={this.state.userScore} highScore={this.state.highScore} />
-        <Jumbo />
-        <ImageHolder /> 
+        <Jumbo correct="Correct!" wrong="Wrong..." />
+        <ImageHolder className="image" /> 
       </div>
     );
   }
