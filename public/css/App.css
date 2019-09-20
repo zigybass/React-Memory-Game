@@ -6,7 +6,16 @@
 
 .jumbotron {
     text-align: center;
-    background: rgb(76, 100, 121);
+    background: rgb(46, 81, 105);
     color: rgb(230, 230, 230);
     font-weight: bolder;
+}
+
+.guessCard {
+    display: none;
+}
+
+.images {
+    width: 200px;
+    height: auto;
 }

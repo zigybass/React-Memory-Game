@@ -13,7 +13,7 @@ import React from "react";
 function ImageHolder (props) {
     return (
         <div>
-         
+         <img src={props.src} alt="pic"></img>
         </div>
     )
 }
