@@ -13,7 +13,7 @@ class App extends React.Component {
 
   setScore = (id) => {
     console.log(id)
-    this.setState({ userScore: this.state.userScore++})
+    this.setState({ userScore: this.state.userScore + 1})
   }
 
 
