@@ -1,22 +1,23 @@
 import React from "react";
 
 
-function ImageHolder (props) {
+class ImageHolder extends React.Component {
     
     
 
-    function handleClick (e) {
-        e.preventDefault();
-        console.log(e.currentTarget)
-
-    }
-
-
+    // function handleClick (e) {
+    //     e.preventDefault();
+    //     console.log(e.currentTarget)
+        
+    // }
+    render() {
+        console.log(this.props.setScoreCB)
     return (
         <>
-         <img id={props.id} className="images" src={props.src} alt="pic" onClick={handleClick} ></img>
+         <img id={this.props.id} className="images" src={this.props.src} alt="pic"></img>
         </>
     )
+}
 }
 
 export default ImageHolder;

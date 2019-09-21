@@ -11,12 +11,16 @@ class App extends React.Component {
     highScore: 0
   };
 
+  setScore = () => {
+    this.setState({  })
+  }
+
 
   render() {
     let names = ["bergen", "Bern", "kyoto", "marrakech", "Rome-1", "tibet"]
     let images = names.map( (item, i) => {
       return (
-        <ImageHolder key={item} id={i} src={require("./images/" + item + ".jpg")}/>
+        <ImageHolder key={item} id={i} src={require("./images/" + item + ".jpg")} setScoreCB={this.setScore} />
       )
     })
     return (
