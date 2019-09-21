@@ -2,6 +2,7 @@ import React from "react";
 import ImageHolder from "./components/Images";
 import Jumbo from "./components/Jumbo";
 import Header from "./components/Header";
+// import ImageRow from "./components/ImageRow";
 // import { arrayExpression } from "@babel/types";
 
 class App extends React.Component {
@@ -13,9 +14,9 @@ class App extends React.Component {
 
   render() {
     let names = ["bergen", "Bern", "kyoto", "marrakech", "Rome-1", "tibet"]
-    let images = names.map( item => {
+    let images = names.map( (item, i) => {
       return (
-        <ImageHolder key={item} src={require("./images/" + item + ".jpg")} />
+        <ImageHolder key={item} id={i} src={require("./images/" + item + ".jpg")} />
       )
     })
     return (
@@ -25,7 +26,9 @@ class App extends React.Component {
           highScore={this.state.highScore}
         />
         <Jumbo correct="Correct!" wrong="Wrong..." />
-        {images}  
+        <div className="container imagecont">
+          {images}
+        </div>
       </div>
     );
   }
