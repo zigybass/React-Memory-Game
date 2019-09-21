@@ -11,8 +11,9 @@ class App extends React.Component {
     highScore: 0
   };
 
-  setScore = () => {
-    console.log("Got through")
+  setScore = (id) => {
+    console.log(id)
+    this.setState({})
   }
 
 

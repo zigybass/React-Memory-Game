@@ -3,7 +3,6 @@ import React from "react";
 
 class ImageHolder extends React.Component {
     
-    
 
     // function handleClick (e) {
     //     e.preventDefault();
@@ -11,9 +10,10 @@ class ImageHolder extends React.Component {
         
     // }
     render() {
+        const { id, src } = this.props
     return (
         <>
-         <img id={this.props.id} className="images" src={this.props.src} alt="pic" onClick={this.props.setScoreCB} ></img>
+         <img id={id} className="images" src={src} alt="pic" onClick={this.props.setScoreCB.bind(this, id)} ></img>
         </>
     )
 }
