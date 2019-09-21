@@ -10,7 +10,14 @@ class App extends React.Component {
     highScore: 0
   };
 
+
   render() {
+    let names = ["bergen", "Bern", "kyoto", "marrakech", "Rome-1", "tibet"]
+    let images = names.map( item => {
+      return (
+        <ImageHolder key={item} src={require("./images/" + item + ".jpg")} />
+      )
+    })
     return (
       <div>
         <Header
@@ -18,7 +25,7 @@ class App extends React.Component {
           highScore={this.state.highScore}
         />
         <Jumbo correct="Correct!" wrong="Wrong..." />
-        <ImageHolder className="images" src="../public/images/Bern.jpg" />
+        {images}  
       </div>
     );
   }
