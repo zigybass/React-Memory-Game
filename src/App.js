@@ -18,7 +18,7 @@ class App extends React.Component {
 
 
   render() {
-    let names = ["bergen", "Bern", "kyoto", "marrakech", "Rome-1", "tibet"]
+    let names = ["bergen", "Bern", "kyoto", "marrakech", "Rome-1", "tibet", "newyork", "greece", "bonn", "russia", "seoul", "oregon"]
     let images = names.map( (item, i) => {
       return (
         <ImageHolder key={item} id={i} src={require("./images/" + item + ".jpg")} setScoreCB={this.setScore} />
