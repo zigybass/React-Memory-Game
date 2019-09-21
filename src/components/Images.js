@@ -11,10 +11,9 @@ class ImageHolder extends React.Component {
         
     // }
     render() {
-        console.log(this.props.setScoreCB)
     return (
         <>
-         <img id={this.props.id} className="images" src={this.props.src} alt="pic"></img>
+         <img id={this.props.id} className="images" src={this.props.src} alt="pic" onClick={this.props.setScoreCB} ></img>
         </>
     )
 }

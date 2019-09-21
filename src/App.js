@@ -12,7 +12,7 @@ class App extends React.Component {
   };
 
   setScore = () => {
-    this.setState({  })
+    console.log("Got through")
   }
 
 
