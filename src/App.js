@@ -16,7 +16,7 @@ class App extends React.Component {
     let names = ["bergen", "Bern", "kyoto", "marrakech", "Rome-1", "tibet"]
     let images = names.map( (item, i) => {
       return (
-        <ImageHolder key={item} id={i} src={require("./images/" + item + ".jpg")} />
+        <ImageHolder key={item} id={i} src={require("./images/" + item + ".jpg")}/>
       )
     })
     return (
@@ -26,7 +26,7 @@ class App extends React.Component {
           highScore={this.state.highScore}
         />
         <Jumbo correct="Correct!" wrong="Wrong..." />
-        <div className="container imagecont">
+        <div className="container imageCont">
           {images}
         </div>
       </div>
