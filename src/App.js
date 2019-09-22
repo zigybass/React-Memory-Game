@@ -19,8 +19,11 @@ class App extends React.Component {
   };
 
   resetUserScore = () => {
+    if ( this.state.userScore > this.state.highScore ) {
+      this.setState({ highScore: this.state.userScore})
+    }
     this.setState({ userScore: 0})
-    this.setState({ idArr: []})
+    this.setState({ idArr: [] })
   }
 
   checkScore = file => {
@@ -38,8 +41,18 @@ class App extends React.Component {
     } else if (this.state.idArr.includes(file)) {
       console.log("match found")
       this.resetUserScore();
+
     }
   };
+
+  shuffleFiles = (arr) => {
+    for ( let i = arr.length - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+    }
+  }
 
   render() {
     let names = [
