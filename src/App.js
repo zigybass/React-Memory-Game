@@ -8,12 +8,33 @@ import Header from "./components/Header";
 class App extends React.Component {
   state = {
     userScore: 0,
-    highScore: 0
+    highScore: 5,
+    idArr: [],
+    fileName: []
   };
 
-  setScore = (id) => {
-    console.log(id)
+  setUserScore = () => {
+    console.log("setScore")
     this.setState({ userScore: this.state.userScore + 1})
+  }
+
+  checkScore = (file) => {
+    console.log(file)
+    this.state.idArr.push(file)
+    console.log(this.state.idArr)
+    this.setUserScore();
+    // this.state.idArr.forEach( item => {
+    //   console.log("forEach")
+    //   if ( item === id ) {
+    //     console.log("if")
+    //     this.state.idArr.push(id)
+    //     // this.setScore()
+    //   } else {
+    //     this.state.idArr.push(id)
+    //     console.log("else")
+    //     // this.state.idArr.push(id)
+    //   }
+    // })
   }
 
 
@@ -21,7 +42,7 @@ class App extends React.Component {
     let names = ["bergen", "Bern", "kyoto", "marrakech", "Rome-1", "tibet", "newyork", "greece", "bonn", "russia", "seoul", "oregon"]
     let images = names.map( (item, i) => {
       return (
-        <ImageHolder key={item} id={i} src={require("./images/" + item + ".jpg")} setScoreCB={this.setScore} />
+        <ImageHolder key={i} id={item} src={require("./images/" + item + ".jpg")} setScoreCB={this.checkScore} />
       )
     })
     return (
