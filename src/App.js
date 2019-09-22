@@ -24,20 +24,20 @@ class App extends React.Component {
   }
 
   checkScore = file => {
-    // console.log(file)
+    console.log(file, this)
     // this.state.idArr.push(file)
     console.log(this.state.idArr);
     if (this.state.idArr.length === 0) {
       this.state.idArr.push(file);
       console.log(`new file: ${file}`);
       this.setUserScore();
-    } else {
-      this.state.idArr.forEach(item => {
-        if (file === item) {
-          console.log("match found");
-          this.resetUserScore();
-        } 
-      });
+    } else if (!this.state.idArr.includes(file)) {
+      console.log("match not found")
+      this.state.idArr.push(file);
+      this.setUserScore();
+    } else if (this.state.idArr.includes(file)) {
+      console.log("match found")
+      this.resetUserScore();
     }
   };
 
