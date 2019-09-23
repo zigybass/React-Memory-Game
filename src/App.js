@@ -2,7 +2,6 @@ import React from "react";
 import ImageHolder from "./components/Images";
 import Jumbo from "./components/Jumbo";
 import Header from "./components/Header";
-// import files from "./utils/files.json";
 
 class App extends React.Component {
   state = {
