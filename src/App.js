@@ -2,8 +2,7 @@ import React from "react";
 import ImageHolder from "./components/Images";
 import Jumbo from "./components/Jumbo";
 import Header from "./components/Header";
-// import ImageRow from "./components/ImageRow";
-// import { arrayExpression } from "@babel/types";
+// import files from "./utils/files.json";
 
 class App extends React.Component {
   state = {
@@ -40,6 +39,7 @@ class App extends React.Component {
       this.setUserScore();
     } else if (this.state.idArr.includes(file)) {
       console.log("match found")
+
       this.resetUserScore();
 
     }
@@ -52,15 +52,16 @@ class App extends React.Component {
       arr[i] = arr[j];
       arr[j] = temp;
     }
+    return arr
   }
 
   render() {
     let names = [
       "bergen",
-      "Bern",
+      "bern",
       "kyoto",
       "marrakech",
-      "Rome-1",
+      "rome",
       "tibet",
       "newyork",
       "greece",
@@ -69,6 +70,7 @@ class App extends React.Component {
       "seoul",
       "oregon"
     ];
+    this.shuffleFiles(names)
     let images = names.map((item, i) => {
       return (
         <ImageHolder
