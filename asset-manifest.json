@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/React-Memory-Game/static/js/main.d8a076b1.chunk.js",
+    "main.js.map": "/React-Memory-Game/static/js/main.d8a076b1.chunk.js.map",
+    "runtime-main.js": "/React-Memory-Game/static/js/runtime-main.25dee0c9.js",
+    "runtime-main.js.map": "/React-Memory-Game/static/js/runtime-main.25dee0c9.js.map",
+    "static/js/2.3fa1ee7b.chunk.js": "/React-Memory-Game/static/js/2.3fa1ee7b.chunk.js",
+    "static/js/2.3fa1ee7b.chunk.js.map": "/React-Memory-Game/static/js/2.3fa1ee7b.chunk.js.map",
+    "index.html": "/React-Memory-Game/index.html",
+    "precache-manifest.296a32f9c11b47b298107bfa31cbf99e.js": "/React-Memory-Game/precache-manifest.296a32f9c11b47b298107bfa31cbf99e.js",
+    "service-worker.js": "/React-Memory-Game/service-worker.js",
+    "static/media/bergen.jpg": "/React-Memory-Game/static/media/bergen.00722a1a.jpg",
+    "static/media/bern.jpg": "/React-Memory-Game/static/media/bern.fd309de4.jpg",
+    "static/media/bonn.jpg": "/React-Memory-Game/static/media/bonn.a080b39f.jpg",
+    "static/media/greece.jpg": "/React-Memory-Game/static/media/greece.697391c2.jpg",
+    "static/media/kyoto.jpg": "/React-Memory-Game/static/media/kyoto.64dd3a7c.jpg",
+    "static/media/marrakech.jpg": "/React-Memory-Game/static/media/marrakech.7945ac2d.jpg",
+    "static/media/newyork.jpg": "/React-Memory-Game/static/media/newyork.e959c7d3.jpg",
+    "static/media/oregon.jpg": "/React-Memory-Game/static/media/oregon.9f8a31cd.jpg",
+    "static/media/rome.jpg": "/React-Memory-Game/static/media/rome.e0a328bd.jpg",
+    "static/media/russia.jpg": "/React-Memory-Game/static/media/russia.05bc90cf.jpg",
+    "static/media/seoul.jpg": "/React-Memory-Game/static/media/seoul.c62298c3.jpg",
+    "static/media/tibet.jpg": "/React-Memory-Game/static/media/tibet.781ca864.jpg"
+  }
+}
