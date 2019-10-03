@@ -10,9 +10,10 @@ A fun little React game. Click on the pictures to have a point added to your Sco
 
 I built this game using: 
 
-React
-Express/Node
-Bootstrap
-VS Code 
+* React
+* Express/Node
+* Bootstrap
+* Javascript
+* VS Code 
 
-I would also like to give credit to using Richard Durstenfeld's shuffle algorithm. 
+I would also like to give credit to using Richard Durstenfeld's shuffle algorithm that I used to rearrange the pictures. 
